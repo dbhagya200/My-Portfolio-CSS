@@ -4,74 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/akka.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/contact.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Dilini B. Warnekulasooriya</title>
-    <style>
-      body {
-        overflow-x: hidden;
-        margin: 0;
-      }
-      .navbar{
-            display: flex;
-            padding-top: 10px;
-            justify-content: space-between;
-            width: 100%;
-            height: 80px;
-        }
-        .links{
-            list-style: none;
-            display: flex;
-            align-items: center;
-            margin-top: 25px;
-
-        }
-        .links li{
-            margin: 0 40px;
-            font-size: 17px;
-            transition: color 0.3s, transform 0.3s;
-            a{
-                text-decoration: none;
-                color: white;
-
-            }
-
-        }
-        .links button{
-            width: 90px;
-            height: 34.39px;
-            border-radius: 15px;
-        }
-        .navbar div img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-left: 8px;
-            border: 2px solid white;
-            
-        }
-        #name {
-            margin-left: 10px;
-            padding-top: 10px;
-            display: flex;
-            font-family: "Stoke", serif;
-            font-size: 20px;
-            color:white;
-        }
-        .logo{
-            display: flex;
-        }
-        .bg img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow-x: hidden;
-        
-        filter: brightness(0.8);
-        opacity: 0.99;
-        z-index: -1;
-      }
-    </style>
+    
   </head>
   <body>
     <div class="bg">
@@ -92,7 +31,108 @@
               <li><a href="/hire-me.html"><button>Hire me</button></a></li>
           </ul>
       </nav>
-
+      <i class="fa fa-bars burger" aria-hidden="true" id="burger" style="color: #f5f5f5; "></i>
   </div>
+
+  <div class="menu-panel" id="menu-panel-id">
+    <button class="close-btn" id="btn-close">&times;</button>
+    <ul>
+      <li><a href="/home.html">Home</a></li>
+              <li><a href="/about-me.html">About me</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/hire-me.html"><button>Hire me</button></a></li>
+    </ul>
+  </div>
+
+
+
+
+  <section id="contact" class="contact">
+
+    <div class="contact-title">
+      <h2>Contact</h2>
+      <p>Contact Me</p>
+    </div>
+
+    <div class="row-1">
+      <div class="box">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="address">
+          <h3>My Address</h3>
+          <p>Anula Street,Pandulagama,</p>
+          <p>Anuradhapura,Sri Lanka.</p>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <i class="fa-solid fa-share-nodes"></i>
+        <div class="social">
+          <h3>Social Profiles</h3>
+          <div class="social-links">
+            <a href="https://web.facebook.com/sanduni.bhagya.904" class="facebook" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/bhagya_dil14146" class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/dilini-bhagya/" class="linkedin" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/dbhagya200" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-1">
+      <div class="box">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="email">
+          <h3>Email Me</h3>
+          <p>dilinibhagya53@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div class="call">
+          <h3>Call Me</h3>
+            <p>074 0996275</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-box">
+      <div class="name-email">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+      </div>
+      <div class="sub-mess">
+        <input type="text" placeholder="Subject">
+        <textarea name="message" id="msg" placeholder="Message"></textarea>
+
+
+        <button id="button">Send Message</button>
+      </div>
+      
+    </div>
+
+
+
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+  
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
+  </section>
   </body>
 </html>
