@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/akka.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-<link rel="stylesheet" href="/css/home.css">    
-<title>Dilini B. Warnekulasooriya</title>
-</head>
-<body>
-  
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>Dilini B. Warnekulasooriya</title>
+  </head>
+  <body>
     <div class="bg">
-        <img src="/img/new.jpeg" alt="">
+      <img src="/img/new.jpeg" alt="" />
     </div>
     <div class="navbar">
-        <div>
-            <img src="img/akka.jpg" alt="" />
-          </div>
-        <nav>
-            <ul class="links">
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/about-me.html">About me</a></li>
-                <li><a href="/portfolio.html">Portfolio</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/hire-me.html"><button>Hire me</button></a></li>
-            </ul>
-            <i class="fa fa-bars burger" id="burger" aria-hidden="true" style="color: #f5f5f5;"></i>
-            
-        </nav>
+      <div>
+        <img src="img/akka.jpg" alt="" />
+      </div>
+      <nav>
+        <ul class="links">
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/about-me.html">About me</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <a href="/hire-me.html"><button>Hire me</button></a>
+          </li>
+        </ul>
+        <i
+          class="fa fa-bars burger"
+          id="burger"
+          aria-hidden="true"
+          style="color: #f5f5f5"
+        ></i>
+      </nav>
     </div>
 
     <div class="menu-panel" id="menu-panel-id">
       <button class="close-btn" id="btn-close">&times;</button>
       <ul>
         <li><a href="/home.html">Home</a></li>
-                <li><a href="/about-me.html">About me</a></li>
-                <li><a href="/portfolio.html">Portfolio</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/hire-me.html"><button>Hire me</button></a></li>
+        <li><a href="/about-me.html">About me</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li>
+          <a href="/hire-me.html"><button>Hire me</button></a>
+        </li>
       </ul>
     </div>
 
     <main>
-        <div class="content">
+      <div class="content">
         <p id="hello">Hello It's Me</p>
         <p id="name">Dilini B. Warnekulasooriya</p>
-        <p id="job-title">
-          I'm a Software Engineer || Web Developer
-        </p>
-        
-        <div class="social-links">
-            <a href="https://web.facebook.com/sanduni.bhagya.904" class="facebook" target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://x.com/bhagya_dil14146" class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/dilini-bhagya/" class="linkedin" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/dbhagya200" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </div>
-        </div>
-        <div class="image">
-            <!-- <img src="/img/my-m.png " alt=""> -->
-        </div>
-    </main>
+        <p id="job-title">I'm a Software Engineer || Web Developer</p>
 
+        <div class="social-links">
+          <a
+            href="https://web.facebook.com/sanduni.bhagya.904"
+            class="facebook"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://x.com/bhagya_dil14146"
+            class="twitter"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dilini-bhagya/"
+            class="linkedin"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/dbhagya200" class="github" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="image">
+        <!-- <img src="/img/my-m.png " alt=""> -->
+      </div>
+    </main>
 
     <script>
       const burger = document.getElementById("burger");
       const menuPanel = document.getElementById("menu-panel-id");
       const closeBtn = document.getElementById("btn-close");
-  
+
       burger.addEventListener("click", () => {
         menuPanel.classList.toggle("active");
       });
-  
+
       closeBtn.addEventListener("click", () => {
         menuPanel.classList.remove("active");
       });
     </script>
-</body>
+  </body>
 </html>
