@@ -670,3 +670,141 @@ body {
       margin-bottom: 20px;
     }
   }
+
+  @media screen and (min-width:769px) and (max-width:1024px) {
+    #name{
+      font-size: 16px;
+      margin-top: 25px;
+    }
+
+    .row-1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .box{
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      margin: 25px;
+    }
+    .message-box{
+      width: 95%;
+      height: auto;
+      justify-content: center;
+      margin: 20px;
+      padding: 5px;
+    }
+
+    .name-email{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      input{
+        width: 95%;
+        margin: 10px 15px;
+      }
+    }
+    .sub-mess{
+      align-items: center;
+      input{
+        width: 95%;
+        margin: 10px 15px;
+      }
+      #msg{
+        width: 95%;
+        margin: 10px 15px;
+      }
+    }
+    #button{
+      margin-bottom: 20px;
+    }
+    
+  }
+  @media screen and (min-width:1025px) and (max-width:1440px) {
+    #name{
+      font-size: 23px;
+      margin-top: 20px;
+    }
+    .links a{
+      font-size: 20px;
+    }
+    .links button{
+      font-size: 16px;}
+    .address h3{
+      font-size: 25px;
+    }
+    .address p{
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    .call h3{
+      font-size: 25px;
+    }
+    .call p{
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    .email h3{
+      font-size: 25px;
+    }
+    .email p{
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    .social h3{
+      font-size: 25px;
+    }
+    .social-links i{
+      font-size: 30px;
+      margin: 0 15px;
+      
+    }
+
+    .message-box{
+      width: 95%;
+      height: auto;
+      justify-content: center;
+      margin: 50px 20px;
+      padding: 5px;
+    }
+
+    .name-email{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      #name-1{
+        width: 95%;
+        margin: 20px 10px;
+        margin-left: 25px;
+        height: 50px;
+      }
+      #email-1{
+        width: 95%;
+        margin: 20px 10px;
+        margin-right: 25px;
+        height: 50px;
+      }
+    }
+    .sub-mess{
+      align-items: center;
+      input{
+        width: 95%;
+        margin: 15px;
+        height: 50px;
+      }
+      #msg{
+        width: 95%;
+        margin: 15px;
+        height: 250px;
+      }
+    }
+    #button{
+      margin-bottom: 30px;
+      font-size: 18px;
+      width: 200px;
+      height: 50px;
+    }
+  }
+   

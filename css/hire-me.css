@@ -467,6 +467,117 @@ body {
       margin-bottom: 20px;
     }
   }
+  @media screen and (min-width:769px) and (max-width:1024px) {
+    #name{
+      font-size: 16px;
+      margin-top: 25px;
+    }
+
+    .row-1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .box{
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      margin: 25px;
+    }
+    .hire-form{
+      width: 95%;
+      height: auto;
+      justify-content: center;
+      margin: 50px 20px;
+      padding: 5px;
+    }
+
+    .name-email{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      input{
+        width: 95%;
+        margin: 15px;
+      }
+    }
+    .sub-mess{
+      align-items: center;
+      input{
+        width: 95%;
+        margin: 10px;
+      }
+      #msg{
+        width: 95%;
+        margin: 10px;
+      }
+    }
+    #button{
+      margin-bottom: 20px;
+    }
+    
+  }
+
+  @media screen and (min-width:1025px) and (max-width:1440px) {
+    #name{
+      font-size: 23px;
+      margin-top: 20px;
+    }
+    .links a{
+      font-size: 20px;
+    }
+    .links button{
+      font-size: 16px;}
+    .content p{
+      font-size: 25px;
+      padding: 10px;
+      margin-left: 30px;
+    }
+
+    .hire-form{
+      width: 95%;
+      height: auto;
+      justify-content: center;
+      margin: 50px 20px;
+      padding: 5px;
+    }
+
+    .name-email{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      #name-1{
+        width: 95%;
+        margin: 20px 10px;
+        margin-left: 25px;
+        height: 50px;
+      }
+      #email-1{
+        width: 95%;
+        margin: 20px 10px;
+        margin-right: 25px;
+        height: 50px;
+      }
+    }
+    .sub-mess{
+      align-items: center;
+      input{
+        width: 95%;
+        margin: 15px;
+        height: 50px;
+      }
+      #msg{
+        width: 95%;
+        margin: 15px;
+        height: 250px;
+      }
+    }
+    #button{
+      margin-bottom: 30px;
+    }
+  }
    
 
   

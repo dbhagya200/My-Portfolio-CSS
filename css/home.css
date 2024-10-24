@@ -280,7 +280,27 @@ z-index: -1;
     
   }
   @media screen and (min-width:1025px) and (max-width:1440px) {
-
+    #hello {
+      font-size: 50px;
+      margin-top: 90px;
+  }
+  #name {
+      font-size: 58px;
+  }
+  #job-title {
+      font-size: 42px;
+  }
+    .links a{
+      font-size: 20px;
+    }
+    .links button{
+      font-size: 16px;}
+    .social-links a {
+      font-size: 35px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+  }
   }
   .menu-panel {
     position: fixed;
