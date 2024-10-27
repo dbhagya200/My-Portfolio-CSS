@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     
 
 /* overflow-x: hidden;
