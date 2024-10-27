@@ -95,17 +95,20 @@ main{
     color: #fff;
     text-decoration: none;
   }
+  
 .image img{
-    width: 120%;
+    width: 100%;
     height: 100%;
-    zoom: calc(100% + 100%);
+    margin-top: 10px;
+    zoom: 610%;
+    /* zoom: calc(100% + 100%); */
     position: relative;
     object-fit: cover;
     overflow: hidden;
     filter: brightness(0.8);
     opacity: 0.99;
     z-index: -1;
-    margin-right: 100px;
+    margin-right: 0px;
 }
 #hello {
 font-size: 40px;
@@ -155,6 +158,11 @@ z-index: -1;
     #job-title {
         font-size: 22px;
     }
+    .image{
+        img{
+            display: none;
+        }
+    }
     .social-links a {
         font-size: 20px;
         width: 40px;
@@ -195,6 +203,11 @@ z-index: -1;
       height: 40px;
       border-radius: 50%;
   }
+  .image{
+    img{
+        display: none;
+    }
+}
     
     .links {
         display: none;
@@ -228,6 +241,11 @@ z-index: -1;
       height: 45px;
       border-radius: 50%;
   }
+  .image{
+    img{
+        display: none;
+    }
+}
     
     .links {
         display: none;
@@ -254,7 +272,16 @@ z-index: -1;
   #job-title {
       font-size: 32px;
   }
-    
+  .bg img {
+    position: absolute;
+    width: 100%;
+  }
+    .image{
+        width: 100%;
+        img{
+            zoom: 700%;
+        }
+    }
     .social-links a {
       font-size: 30px;
       width: 45px;
@@ -277,7 +304,12 @@ z-index: -1;
       }
   }
   @media screen and (min-width:769px) and (max-width:1024px) {
-    
+    .image{
+        width: 50%;
+        img{
+            zoom: 500%;
+        }
+    }
   }
   @media screen and (min-width:1025px) and (max-width:1440px) {
     #hello {
@@ -290,6 +322,10 @@ z-index: -1;
   #job-title {
       font-size: 42px;
   }
+    .image{
+        width: 40%;
+        
+    }
     .links a{
       font-size: 20px;
     }
